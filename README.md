@@ -4,7 +4,7 @@
 
 ## Project Description
 
-## Table of Contents (optional)
+## Table of Contents
 
 ## Tech Stack
 
@@ -21,7 +21,7 @@ Please follow the categories based on your changes:
 - chore: changes in building, testing, or any other workflow processes.
 - release: release project breakpoint.
 
-## Releasing process (optional)
+## Releasing process
 
 ## Authors
 
