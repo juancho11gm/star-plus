@@ -1,0 +1,31 @@
+.hero-header {
+    display: grid;
+    place-items: center;
+    background-image: url('/img/hero-lg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    width: 74rem;
+    padding: 22.5vw 0 0 0;
+}
+
+.star-logo {
+    max-width: 18rem;
+    margin-bottom: 2.5rem;
+}
+
+.description {
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+}
+
+.primary-button .quiero-combo{
+    max-width: 54rem;
+    height: 6.8rem;
+}
+
+.anchor-subscription {
+    font-size: 2rem;
+}

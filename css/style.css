@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    font-family: 'Sen', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --text-input-field: #f9f9f9;
+    --black: #000000;
+    --orange: rgb(238, 71, 5);
+    --sm: 1em;
+    --md: 1.6em;
+    --lg: 2.6em;
+}
+
+.hero-header {
+    background-image: url('/img/hero-sm.jpg');
+    background-size: 100%;
+}
+
+
+.hero-text {
+    display: block;
+    color: var(--text-input-field);
+    height: auto;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    padding: 44vw 5vw 20vw;
+    position: relative;
+}
+
+.star-logo {
+    width: 100%;
+    height: auto;
+    max-width: 16rem;
+    margin-bottom: 3vw;
+}
+
+.description {
+    font-size: var(--lg);
+    margin-bottom: 16px;
+}
+
+.primary-button {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.primary-button .quiero-combo{
+    background-color: var(--orange);
+    border-radius: 4px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    height: 5rem;
+    font-size: var(--md);
+    max-width: 54rem;
+}
+
+.anchor-subscription {
+    color: var(--text-input-field);
+    margin-top: 20px;
+    font-size: var(--md);
+}
