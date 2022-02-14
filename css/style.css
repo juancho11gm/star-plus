@@ -12,15 +12,13 @@ html {
     font-size: 62.5%;
     --text-input-field: #f9f9f9;
     --black: #000000;
-    --orange: rgb(238, 71, 5);
-    --sm: 1em;
-    --md: 1.6em;
-    --lg: 2.6em;
 }
 
 .hero-header {
     background-image: url('/img/hero-sm.jpg');
     background-size: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
 }
 
 
@@ -43,7 +41,7 @@ html {
 }
 
 .description {
-    font-size: var(--lg);
+    font-size: 2.6em;
     margin-bottom: 16px;
 }
 
@@ -53,19 +51,19 @@ html {
     width: 100%;
 }
 
-.primary-button .quiero-combo{
-    background-color: var(--orange);
+.primary-button .combo-button {
+    background: linear-gradient(90deg,#fa1660,#ff6e00);
     border-radius: 4px;
     color: var(--white);
     width: 100%;
     cursor: pointer;
     height: 5rem;
-    font-size: var(--md);
+    font-size: 1.6em;
     max-width: 54rem;
 }
 
 .anchor-subscription {
     color: var(--text-input-field);
     margin-top: 20px;
-    font-size: var(--md);
+    font-size: 1.6em;
 }
