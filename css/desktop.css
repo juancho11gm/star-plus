@@ -1,31 +1,37 @@
-.hero-header {
-    display: grid;
-    place-items: center;
-    background-image: url('/img/hero-lg.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+.hero {
+    background-image: url('/img/hero-lg.jpg');    
 }
 
-.hero-text {
-    width: 74rem;
-    padding: 22.5vw 0 0 0;
+.hero__content {
+    padding-top: 28vw;
 }
 
-.star-logo {
-    max-width: 18rem;
-    margin-bottom: 2.5rem;
+.hero__image {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 2vw;
 }
 
-.description {
-    font-size: 4rem;
-    margin-bottom: 2.4rem;
+.hero__title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 24px;
 }
 
-.primary-button .quiero-combo{
-    max-width: 54rem;
-    height: 6.8rem;
+.hero__button-container {
+    height: 68px;
+    margin-bottom: 20px;
 }
 
-.anchor-subscription {
-    font-size: 2rem;
+.hero__button{
+    font-size: 18px;
+    line-height: 18px;
+    height: 100%;
+    max-width: 700px;
+}
+
+
+.hero__link {
+    font-size: 16px;
+    line-height: 26px;
 }

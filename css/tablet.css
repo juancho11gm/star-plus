@@ -1,30 +1,17 @@
-.hero-header {
-    display: grid;
-    place-items: center;
-    background-image: url('/img/hero-md.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+.hero {
+    background-image: url('/img/hero-sm.jpg');
 }
 
-.hero-text {
-    width: 64rem;
-    padding: 26vw 0 0 0;
+.hero__title {
+    font-size: 22px;
 }
 
-.star-logo {
-    max-width: 18rem;
+.hero__button-container{
+    font-size: 15px;
+    line-height: 15px;
+    height: 50px;
 }
 
-.description {
-    font-size: 2.8rem;
-}
-
-.primary-button .quiero-combo{
-    font-size: 1.8rem;
-    max-width: 64rem;
-    height: 6.8rem;
-}
-
-.anchor-subscription {
-    font-size: 1.8rem;
+.hero__link {
+    font-size: 14px;
 }

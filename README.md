@@ -24,7 +24,7 @@ Please follow the categories based on your changes for your branches/commits.
 
 **Branch strategy**
 
-`category/#n-description.`
+`category/#n-hero__title.`
 
 ```bash
 docs/#2-add-readme-structure
@@ -32,7 +32,7 @@ docs/#2-add-readme-structure
 
 **Commits strategy**
 
-`category: #n description.`
+`category: #n hero__title.`
 
 ```bash
 docs: #2 add readme structure
