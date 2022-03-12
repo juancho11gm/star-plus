@@ -1,0 +1,37 @@
+.hero {
+    background-image: url('/img/hero-lg.jpg');    
+}
+
+.hero__content {
+    padding-top: 28vw;
+}
+
+.hero__image {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+.hero__title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 24px;
+}
+
+.hero__button-container {
+    height: 68px;
+    margin-bottom: 20px;
+}
+
+.hero__button{
+    font-size: 18px;
+    line-height: 18px;
+    height: 100%;
+    max-width: 700px;
+}
+
+
+.hero__link {
+    font-size: 16px;
+    line-height: 26px;
+}
