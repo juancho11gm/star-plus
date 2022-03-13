@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('./img/hero-sm.jpg');
+  background-image: url('../img/hero-sm.jpg');
 }
 
 .hero__title {
