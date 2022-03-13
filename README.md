@@ -7,6 +7,15 @@ This project is based on the [Star+ website](https://www.starplus.com/es-co) jus
 - HTML.
 - CSS.
 
+## Local Development
+
+In your code editor or IDE, install their respective plugins/packages so you can see
+in realtime the recommendations while writing code.
+
+- VS Code
+  - [vscode eslint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [vscode prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
 ## Getting Started
 
 - Open the [index.html](./index.html) file with your favorite browser.

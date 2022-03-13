@@ -1,0 +1,32 @@
+{
+  "name": "star-plus",
+  "version": "1.0.0",
+  "description": "clone star plus website",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juancho11gm/start-plus.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juancho11gm/start-plus/issues"
+  },
+  "homepage": "https://github.com/juancho11gm/start-plus#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "prettier": "^2.5.1",
+    "prettier-config-standard": "^5.0.0"
+  }
+}
