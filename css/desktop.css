@@ -3,7 +3,9 @@
 }
 
 .hero__content {
+  padding: 40vw 5vw 10vw;
   padding-top: 28vw;
+
 }
 
 .hero__image {
@@ -33,4 +35,47 @@
 .hero__link {
   font-size: 16px;
   line-height: 26px;
+}
+
+.plan__title {
+  margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.plan__options {
+  display: flex;
+}
+
+.plan__month {
+  margin-top: 0;
+}
+
+.plan__year {
+  margin-top: 0;
+}
+
+.plan__medium {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 28px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.plan__button-combo {
+  height: 60px;
+  padding: 16.5px 24px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.plan__button-star {
+  height: 60px;
+  padding: 16.5px 24px;
+  font-size: 18px;
+  line-height: 18px;
 }

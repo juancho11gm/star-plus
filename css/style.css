@@ -11,13 +11,18 @@ html {
 :root {
   --text-input-field: #f9f9f9;
   --black: #000000;
+  --blue: #6421ff;
+  --background: #050b12;
+  --gray: #cacaca;
+  --purple: #7b00d6;
+  --gradient: linear-gradient(90deg, #fa1660, #ff6e00);
 }
 
 .hero {
   background-image: url('../img/hero-sm.jpg');
   background-size: 100%;
-  min-height: 100vh;
   background-repeat: no-repeat;
+  background-color: var(--background);
   display: flex;
   text-align: center;
 }
@@ -50,9 +55,9 @@ html {
 }
 
 .hero__button {
-  background: linear-gradient(90deg, #fa1660, #ff6e00);
+  background: var(--purple);
   border-radius: 4px;
-  color: var(--white);
+  color: var(--text-input-field);
   width: 100%;
   cursor: pointer;
   height: 50px;
@@ -69,4 +74,149 @@ html {
   font-size: 14px;
   letter-spacing: 0.2px;
   margin: 0 0 24px;
+}
+
+.plan {
+  background-color: var(--background);
+  padding: 10vw 5vw;
+}
+
+.plan__title {
+  color: var(--text-input-field);
+  margin-bottom: 24px;
+  margin-top: 0;
+  letter-spacing: normal;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.plan__options {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: space-around;
+  margin: 0 -12px;
+}
+
+.plan__combo {
+  background-image: url('../img/promo.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+  max-width: 380px;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  padding: 60px 40px 0;
+  padding-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.plan__month {
+  background-image: url('../img/month-year.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+  max-width: 380px;
+  margin-top: 40px;
+  height: auto;
+  padding: 60px 40px 0;
+  padding-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.plan__year {
+  background-image: url('../img/month-year.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+  max-width: 380px;
+  margin-top: 40px;
+  height: auto;
+  padding: 60px 40px 0;
+  padding-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.plan__medium {
+  color: var(--gray);
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0 24px;
+}
+
+h3 {
+  color: var(--text-input-field);
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.plan__button-combo {
+  background: var(--blue);
+  border-radius: 4px;
+  color: var(--text-input-field);
+  cursor: pointer;
+  margin-bottom: 0;
+  height: 50px;
+  padding: 11.5px 24px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan__button-star {
+  background: var(--gradient);
+  border-radius: 4px;
+  color: var(--text-input-field);
+  cursor: pointer;
+  margin-bottom: 0;
+  height: 50px;
+  padding: 11.5px 24px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footnote {
+  color: var(--gray);
+  font-size: 11px;
+  line-height: 21px;
+  margin: 0 0 24px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .2px;
 }

@@ -15,3 +15,7 @@
 .hero__link {
   font-size: 14px;
 }
+
+.plan__options {
+  display: grid;
+}
