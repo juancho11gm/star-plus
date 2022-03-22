@@ -4,13 +4,19 @@
   border: 0;
 }
 
+:root {
+  --text-input-field: #f9f9f9;
+  --black: #090b13;
+  --primary-color: #090b13;
+  --secondary-color: #cacaca;
+}
+
 html {
   font-family: 'Sen', sans-serif;
 }
 
-:root {
-  --text-input-field: #f9f9f9;
-  --black: #000000;
+body {
+  background-color: var(--primary-color);
 }
 
 .hero {
@@ -69,4 +75,21 @@ html {
   font-size: 14px;
   letter-spacing: 0.2px;
   margin: 0 0 24px;
+}
+
+.footer {
+  color: var(--secondary-color);
+  padding: 26px 8px;
+  text-align: center;
+}
+
+.footer__logo {
+  height: 25px;
+  display: block;
+  margin: 4px auto 15px;
+  width: 80px;
+}
+
+.footer__link {
+  color: var(--secondary-color);
 }
