@@ -5,7 +5,6 @@
 .hero__content {
   padding: 40vw 5vw 10vw;
   padding-top: 28vw;
-
 }
 
 .hero__image {
@@ -37,25 +36,39 @@
   line-height: 26px;
 }
 
-.plan__title {
+.hint {
+  top: 85%;
+}
+
+.plans {
+  padding-top: 0;
+}
+
+.plan__title{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.plans__title {
   margin-bottom: 30px;
   font-size: 44px;
   line-height: 54px;
 }
 
-.plan__options {
+.plans__options {
   display: flex;
+  flex-wrap: nowrap;
 }
 
-.plan__month {
+.plan--monthly {
   margin-top: 0;
 }
 
-.plan__year {
+.plan--annually {
   margin-top: 0;
 }
 
-.plan__medium {
+.plan__description {
   font-size: 18px;
   line-height: 28px;
   margin: 0 0 28px;
