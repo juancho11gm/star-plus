@@ -1,7 +1,7 @@
 * {
+  border: 0;
   box-sizing: border-box;
   margin: 0;
-  border: 0;
 }
 
 html {
@@ -9,45 +9,46 @@ html {
 }
 
 :root {
-  --text-input-field: #f9f9f9;
+  --background: #050b12;
   --black: #000000;
   --blue: #6421ff;
-  --background: #050b12;
+  --gradient: linear-gradient(90deg, #fa1660, #ff6e00);
   --gray: #cacaca;
   --purple: #7b00d6;
-  --gradient: linear-gradient(90deg, #fa1660, #ff6e00);
+  --text-input-field: #f9f9f9;
 }
 
 .hero {
-  background-image: url('../img/hero-sm.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
   background-color: var(--background);
+  background-image: url('../img/hero-sm.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .hero__content {
   color: var(--text-input-field);
   min-height: 70vh;
-  width: 100vw;
-  padding: 40vw 5vw 20vw;
   padding-top: 46vw;
+  padding: 45vw 5vw 20vw;
+  width: 100vw;
 }
 
 .hero__image {
   display: block;
+  margin-bottom: 3vw;
   margin: auto;
   max-width: 160px;
-  margin-bottom: 3vw;
+  padding-bottom: 12px;
   width: 100%;
 }
 
 .hero__title {
-  margin-bottom: 16px;
   font-size: 22px;
   line-height: 32px;
+  margin-bottom: 16px;
 }
 
 .hero__button-container {
@@ -57,45 +58,46 @@ html {
 
 .hero__button {
   background: var(--purple);
-  color: var(--text-input-field);
-  width: 100%;
-  cursor: pointer;
-  letter-spacing: 1px;
-  margin-top: 1px;
   border-radius: 4px;
+  color: var(--text-input-field);
+  cursor: pointer;
   font-size: 15px;
-  line-height: 15px;
   height: 50px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  margin-top: 1px;
   max-width: 540px;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .hero__link {
   color: var(--text-input-field);
+  font-size: 14px;
   letter-spacing: 0.2px;
   line-height: 26px;
-  font-size: 14px;
   margin: 0 0 24px;
 }
+
 .hint {
   -webkit-animation: bounce 1.75s infinite;
   animation: bounce 1.75s infinite;
   background-color: transparent;
   border: none;
-  position: absolute;
+  bottom: 2vw;
   cursor: pointer;
+  fill: #f9f9f9;
   font-size: 0;
+  height: 48px;
+  left: 50%;
   margin: 0 auto;
   opacity: .65;
-  bottom: 2vw;
   padding: 6px;
-  height: 48px;
-  width: 48px;
-  fill: #f9f9f9;
   pointer-events: none;
-  left: 50%;
+  position: absolute;
   top: 92%;
   transform: translate(-50%, -50%);
+  width: 48px;
 }
 
 .plans {
@@ -106,12 +108,12 @@ html {
 
 .plans__title {
   color: var(--text-input-field);
-  letter-spacing: normal;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 24px;
   font-size: 26px;
+  letter-spacing: normal;
   line-height: 36px;
+  margin-bottom: 24px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .plan__title {
@@ -124,27 +126,27 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 0;
   margin: 0 -12px;
+  padding-left: 0;
 }
 
 .plan {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  box-sizing: border-box;
-  height: auto;
-  padding-bottom: 40px;
-  max-width: 380px;
-  width: 100%;
-  margin-top: 0;
-  padding: 60px 40px 0;
   align-items: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  list-style: none;
-  text-align: center;
+  height: auto;
   justify-content: space-between;
+  list-style: none;
+  margin-top: 0;
+  max-width: 380px;
+  padding-bottom: 40px;
+  padding: 60px 40px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .plan--combo {
@@ -152,50 +154,50 @@ html {
   margin-bottom: 40px;
 }
 
+.plan--monthly, .plan--annually {
+  margin: 40px 0;
+}
+
 .plan--monthly {
   background-image: url('../img/month-year.png');
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .plan--annually {
   background-image: url('../img/month-year.png');
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .plan__description {
   color: var(--gray);
-  text-align: center;
   font-size: 15px;
   line-height: 25px;
   margin: 0 0 24px;
+  text-align: center;
 }
 
 .plan__price {
   color: var(--text-input-field);
   font-size: 22px;
-  margin-top: 24px;
   line-height: 32px;
+  margin-top: 24px;
 }
 
 .plan__button {
+  align-items: center;
+  border-radius: 4px;
   color: var(--text-input-field);
   cursor: pointer;
-  text-transform: uppercase;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
-  letter-spacing: 1px;
-  border-radius: 4px;
   font-size: 15px;
-  line-height: 15px;
-  height: 50px;
-  padding: 11.5px 24px;
-  width: 100%;
-  max-width: 320px;
   font-weight: 400;
+  height: 50px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 15px;
+  margin-bottom: 0;
+  max-width: 320px;
+  padding: 11.5px 24px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .button--combo {
@@ -209,9 +211,9 @@ html {
 .plans__footnote {
   color: var(--gray);
   font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .2px;
   line-height: 21px;
   margin: 0 0 24px;
   text-align: center;
-  font-weight: 400;
-  letter-spacing: .2px;
 }

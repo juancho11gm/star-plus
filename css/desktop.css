@@ -3,14 +3,14 @@
 }
 
 .hero__content {
-  padding: 40vw 5vw 10vw;
   padding-top: 28vw;
+  padding: 40vw 5vw 10vw;
 }
 
 .hero__image {
-  max-width: 180px;
   height: auto;
   margin-bottom: 2vw;
+  max-width: 180px;
 }
 
 .hero__title {
@@ -26,8 +26,8 @@
 
 .hero__button {
   font-size: 18px;
-  line-height: 18px;
   height: 100%;
+  line-height: 18px;
   max-width: 700px;
 }
 
@@ -50,9 +50,9 @@
 }
 
 .plans__title {
-  margin-bottom: 30px;
   font-size: 44px;
   line-height: 54px;
+  margin-bottom: 30px;
 }
 
 .plans__options {
@@ -60,11 +60,7 @@
   flex-wrap: nowrap;
 }
 
-.plan--monthly {
-  margin-top: 0;
-}
-
-.plan--annually {
+.plan--monthly, .plan--annually {
   margin-top: 0;
 }
 
@@ -74,21 +70,21 @@
   margin: 0 0 28px;
 }
 
-h3 {
+.plan__price {
   font-size: 28px;
   line-height: 38px;
 }
 
 .plan__button-combo {
-  height: 60px;
-  padding: 16.5px 24px;
   font-size: 18px;
+  height: 60px;
   line-height: 18px;
+  padding: 16.5px 24px;
 }
 
 .plan__button-star {
-  height: 60px;
-  padding: 16.5px 24px;
   font-size: 18px;
+  height: 60px;
   line-height: 18px;
+  padding: 16.5px 24px;
 }
