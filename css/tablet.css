@@ -8,10 +8,14 @@
 
 .hero__button-container {
   font-size: 15px;
-  line-height: 15px;
   height: 50px;
+  line-height: 15px;
 }
 
 .hero__link {
   font-size: 14px;
+}
+
+.plans__options {
+  display: grid;
 }
