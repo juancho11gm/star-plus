@@ -18,6 +18,14 @@ in realtime the recommendations while writing code.
 
 ## Getting Started
 
+```bash
+nvm use
+```
+
+```bash
+npm i
+```
+
 - Open the [index.html](./index.html) file with your favorite browser.
 
 ## How to contribute
