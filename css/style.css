@@ -96,7 +96,7 @@ body {
   height: 48px;
   left: 50%;
   margin: 0 auto;
-  opacity: .65;
+  opacity: 0.65;
   padding: 6px;
   pointer-events: none;
   position: absolute;
@@ -108,7 +108,6 @@ body {
 .plans {
   background-color: var(--background);
   padding: 10vw 5vw;
-  
 }
 
 .plans__title {
@@ -159,7 +158,8 @@ body {
   margin-bottom: 40px;
 }
 
-.plan--monthly, .plan--annually {
+.plan--monthly,
+.plan--annually {
   margin: 40px 0;
 }
 
@@ -217,7 +217,7 @@ body {
   color: var(--secondary-color);
   font-size: 11px;
   font-weight: 400;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   line-height: 21px;
   margin: 0 0 24px;
   text-align: center;

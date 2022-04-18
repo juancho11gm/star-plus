@@ -43,7 +43,7 @@
   padding-top: 0;
 }
 
-.plan__title{
+.plan__title {
   font-size: 18px;
   line-height: 28px;
 }
@@ -59,7 +59,8 @@
   flex-wrap: nowrap;
 }
 
-.plan--monthly, .plan--annually {
+.plan--monthly,
+.plan--annually {
   margin-top: 0;
 }
 
