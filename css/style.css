@@ -4,18 +4,23 @@
   margin: 0;
 }
 
-html {
-  font-family: 'Sen', sans-serif;
-}
-
 :root {
   --background: #050b12;
   --black: #000000;
   --blue: #6421ff;
   --gradient: linear-gradient(90deg, #fa1660, #ff6e00);
-  --gray: #cacaca;
+  --primary-color: #090b13;
   --purple: #7b00d6;
+  --secondary-color: #cacaca;
   --text-input-field: #f9f9f9;
+}
+
+html {
+  font-family: 'Sen', sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
 }
 
 .hero {
@@ -117,7 +122,7 @@ html {
 }
 
 .plan__title {
-  color: var(--gray);
+  color: var(--secondary-color);
   font-size: 15px;
   line-height: 25px;
 }
@@ -167,7 +172,7 @@ html {
 }
 
 .plan__description {
-  color: var(--gray);
+  color: var(--secondary-color);
   font-size: 15px;
   line-height: 25px;
   margin: 0 0 24px;
@@ -209,11 +214,28 @@ html {
 }
 
 .plans__footnote {
-  color: var(--gray);
+  color: var(--secondary-color);
   font-size: 11px;
   font-weight: 400;
   letter-spacing: .2px;
   line-height: 21px;
   margin: 0 0 24px;
   text-align: center;
+}
+
+.footer {
+  color: var(--secondary-color);
+  padding: 26px 8px;
+  text-align: center;
+}
+
+.footer__logo {
+  height: 25px;
+  display: block;
+  margin: 4px auto 15px;
+  width: 80px;
+}
+
+.footer__link {
+  color: var(--secondary-color);
 }
