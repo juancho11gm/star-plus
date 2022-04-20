@@ -4,8 +4,14 @@
   "description": "clone star plus website",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "format": "prettier --write ."
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:css": "stylelint \"./**/*.css\"",
+    "lint:css:fix": "stylelint \"./**/*.css\" --fix",
+    "format": "prettier --write .",
+    "test:ci": "npm run lint",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,11 +24,26 @@
   },
   "homepage": "https://github.com/juancho11gm/start-plus#readme",
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.8",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "disableSubjectLowerCase": true
+    }
   }
 }
