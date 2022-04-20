@@ -1,3 +1,13 @@
+.pre-sticky {
+  height: 70px;
+  padding: 0 12px 0 20px;
+}
+
+.header__sign-in {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 .hero {
   background-image: url('../img/hero-sm.jpg');
 }
