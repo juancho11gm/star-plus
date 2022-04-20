@@ -1,3 +1,5 @@
+/* Hero Component */
+
 .hero {
   background-image: url('../img/hero-lg.jpg');
 }
@@ -38,6 +40,8 @@
 .hint {
   top: 85%;
 }
+
+/* Plans Component */
 
 .plans {
   padding-top: 0;
