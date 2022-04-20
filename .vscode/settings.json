@@ -1,7 +1,13 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // stylelint
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
   "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
     "source.fixAll.eslint": true
   },
   "liveServer.settings.port": 5501
