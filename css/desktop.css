@@ -4,10 +4,27 @@
   padding: 0 36px;
 }
 
+.header__logo {
+  width: 100px;
+}
+
 .header__sign-in {
   height: 50px;
   font-size: 18px;
   padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.post-sticky {
+  padding: 0 36px;
+}
+
+.header__suscribe,
+.post__sign-in {
+  height: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 8px 14px;
   text-transform: uppercase;
 }
 

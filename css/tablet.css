@@ -8,6 +8,17 @@
   text-transform: uppercase;
 }
 
+.post-sticky {
+  height: 70px;
+}
+
+.header__suscribe,
+.post__sign-in {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .hero {
   background-image: url('../img/hero-sm.jpg');
 }
