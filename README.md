@@ -1,11 +1,20 @@
 # Star+
 
+[![eslint](https://img.shields.io/badge/code_lint-eslint-463fd4.svg?style=flat-square)](https://eslint.org)
+[![prettier](https://img.shields.io/badge/prettier-formatter-pink)](https://eslint.org)
+[![stylelint](https://img.shields.io/badge/css_style-stylelint-263338.svg?style=flat-square)](https://stylelint.io)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 This project is based on the [Star+ website](https://www.starplus.com/es-co) just to practice and learn new concepts about web development layouts and styling.
 
 ## Tech Stack
 
+- Platform: Node.js v16+.
+- Code lint and style: eslint, stylelint, standardjs.
+- [Commitlint](https://commitlint.js.org/#/) & [Commitizen](https://github.com/commitizen/cz-cli).
 - HTML.
 - CSS.
+- ES 2015+.
 
 ## Local Development
 
@@ -15,6 +24,7 @@ in realtime the recommendations while writing code.
 - VS Code
   - [vscode eslint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [vscode prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [vscode stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 ## Getting Started
 
