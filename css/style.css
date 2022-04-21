@@ -6,13 +6,13 @@
 
 :root {
   --background: #050b12;
-  --black: #000;
   --blue: #6421ff;
   --gradient: linear-gradient(90deg, #fa1660, #ff6e00);
   --primary-color: #090b13;
   --purple: #7b00d6;
   --secondary-color: #cacaca;
-  --text-input-field: #f9f9f9;
+  --text-primary-color: #f9f9f9;
+  --accordion-background-color: #35313f;
 }
 
 html {
@@ -21,7 +21,10 @@ html {
 
 body {
   background-color: var(--primary-color);
+  color: var(--text-primary-color);
 }
+
+/* Hero Component */
 
 .hero {
   background-color: var(--background);
@@ -35,7 +38,6 @@ body {
 
 .hero__content {
   width: 100vw;
-  color: var(--text-input-field);
   min-height: 70vh;
   padding: 45vw 5vw 20vw;
   padding-top: 46vw;
@@ -104,13 +106,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* Plans Component */
+
 .plans {
   background-color: var(--background);
   padding: 10vw 5vw;
 }
 
 .plans__title {
-  color: var(--text-input-field);
   font-size: 26px;
   letter-spacing: normal;
   line-height: 36px;
@@ -179,7 +182,6 @@ body {
 }
 
 .plan__price {
-  color: var(--text-input-field);
   font-size: 22px;
   line-height: 32px;
   margin-top: 24px;
@@ -190,7 +192,6 @@ body {
   height: 50px;
   align-items: center;
   border-radius: 4px;
-  color: var(--text-input-field);
   cursor: pointer;
   display: inline-flex;
   font-size: 15px;
@@ -221,6 +222,64 @@ body {
   margin: 0 0 24px;
   text-align: center;
 }
+
+/* Accordion Component */
+
+.accordion {
+  padding: 10vw 5vw;
+}
+
+.accordion__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+  text-align: center;
+}
+
+.accordion-container {
+  background-color: var(--accordion-background-color);
+  margin-top: 16px;
+  text-align: left;
+}
+
+.accordion-container__summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  font-size: 18px;
+  justify-content: space-between;
+  line-height: 28px;
+  list-style: none;
+  padding: 24px;
+}
+
+.accordion-container__summary::after {
+  content: '+';
+  font-size: 50px;
+  line-height: 0.8;
+}
+
+.accordion-container__summary.open::after {
+  content: '-';
+}
+
+.accordion-container__content {
+  height: 0;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 26px;
+  overflow: hidden;
+  padding: 0 24px;
+  transform-origin: top;
+  transition: height 0.15s ease-out;
+}
+
+.accordion-container__description {
+  padding-bottom: 24px;
+}
+
+/* Footer Component */
 
 .footer {
   color: var(--secondary-color);
