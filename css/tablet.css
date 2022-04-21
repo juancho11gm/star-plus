@@ -1,4 +1,4 @@
-.pre-sticky {
+.navbar__hero {
   height: 70px;
   padding: 0 12px 0 20px;
 }
@@ -8,7 +8,7 @@
   text-transform: uppercase;
 }
 
-.post-sticky {
+.navbar__content {
   height: 70px;
 }
 
@@ -18,6 +18,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+/* Hero Component */
 
 .hero {
   background-image: url('../img/hero-sm.jpg');
@@ -37,6 +39,14 @@
   font-size: 14px;
 }
 
+/* Plans Component */
+
 .plans__options {
   display: grid;
+}
+
+/* Accordion Component */
+
+.accordion {
+  padding: 5.6vw;
 }
