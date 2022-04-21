@@ -1,4 +1,4 @@
-import animateAccordion from '../animations/animations.js';
+import animateAccordion from './Accordion.animations';
 
 class AccordionView {
   constructor(accordions) {

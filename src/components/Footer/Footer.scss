@@ -1,0 +1,16 @@
+.footer {
+  color: var(--secondary-color);
+  padding: 26px 8px;
+  text-align: center;
+
+  &__link {
+    color: var(--secondary-color);
+  }
+
+  &__logo {
+    width: 80px;
+    height: 25px;
+    display: block;
+    margin: 4px auto 15px;
+  }
+}

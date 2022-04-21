@@ -9,5 +9,6 @@ module.exports = {
     ],
     'selector-class-pattern':
       '^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?$', // https://regexr.com/3apms
+    'at-rule-no-unknown': [true, { ignoreAtRules: ['include', 'mixin'] }],
   },
 };
