@@ -42,7 +42,7 @@ body {
 .navbar-hero {
   background-color: transparent;
   padding: 0 8px 0 10px;
-  z-index: 4;
+  z-index: 1;
 }
 
 .navbar-hero__sign-in {
@@ -66,7 +66,7 @@ body {
 .navbar-content {
   background-color: var(--primary-color);
   padding: 0 12px 0 20px;
-  z-index: 4;
+  z-index: 1;
 }
 
 .navbar-content__logo {
