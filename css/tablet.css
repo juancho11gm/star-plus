@@ -1,3 +1,24 @@
+.navbar-hero {
+  height: 70px;
+  padding: 0 12px 0 20px;
+}
+
+.navbar-hero__sign-in {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-content {
+  height: 70px;
+}
+
+.navbar-content__suscribe,
+.navbar-content__sign-in {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /* Hero Component */
 
 .hero {
