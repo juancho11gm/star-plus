@@ -1,5 +1,5 @@
-import './components/Header/header.scss';
-import './components/Hero/hero.scss';
-import './components/Plans/plans.scss';
+import './components/Header/Header.scss';
+import './components/Hero/Hero.scss';
+import './components/Plans/Plans.scss';
 import './components/Accordion/Accordion';
 import './components/Footer/Footer';
