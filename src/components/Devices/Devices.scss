@@ -1,0 +1,78 @@
+@import '../../styles/mixins';
+@import '../../styles/main.scss';
+
+.devices {
+  padding: 10vw 5vw;
+  text-align: center;
+}
+
+.devices__title {
+  color: var(--text-primary-color);
+  font-size: 26px;
+  letter-spacing: normal;
+  line-height: 36px;
+  margin-bottom: 16px;
+  margin-top: 0;
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 24px;
+  }
+}
+
+.devices-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -12px;
+  padding-left: 0;
+}
+
+.devices-container__content {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  list-style: none;
+  max-width: 50%;
+  padding: 12px;
+
+  @include desktop {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.devices__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.devices__options {
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 32px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
+}
+
+.devices__description {
+  color: var(--secondary-color);
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0 24px;
+  margin-bottom: 20px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
