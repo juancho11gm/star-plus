@@ -1,3 +1,5 @@
+@import './_mixins';
+
 * {
   border: 0;
   box-sizing: border-box;
@@ -314,79 +316,4 @@ body {
   line-height: 21px;
   margin: 0 0 24px;
   text-align: center;
-}
-
-/* Accordion Component */
-
-.accordion {
-  padding: 10vw 5vw;
-}
-
-.accordion__title {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 38px;
-  text-align: center;
-}
-
-.accordion-container {
-  background-color: var(--accordion-background-color);
-  margin-top: 16px;
-  text-align: left;
-}
-
-.accordion-container__summary {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  font-size: 15px;
-  font-size: 18px;
-  justify-content: space-between;
-  line-height: 28px;
-  list-style: none;
-  padding: 24px;
-}
-
-.accordion-container__summary::after {
-  content: '+';
-  font-size: 50px;
-  line-height: 0.8;
-}
-
-.accordion-container__summary.open::after {
-  content: '-';
-}
-
-.accordion-container__content {
-  height: 0;
-  color: var(--secondary-color);
-  font-size: 16px;
-  line-height: 26px;
-  overflow: hidden;
-  padding: 0 24px;
-  transform-origin: top;
-  transition: height 0.15s ease-out;
-}
-
-.accordion-container__description {
-  padding-bottom: 24px;
-}
-
-/* Footer Component */
-
-.footer {
-  color: var(--secondary-color);
-  padding: 26px 8px;
-  text-align: center;
-}
-
-.footer__logo {
-  width: 80px;
-  height: 25px;
-  display: block;
-  margin: 4px auto 15px;
-}
-
-.footer__link {
-  color: var(--secondary-color);
 }

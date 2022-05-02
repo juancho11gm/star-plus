@@ -9,7 +9,6 @@
     "sourceType": "module"
   },
   "rules": {
-    "semi": ["error", "always"],
-    "import/extensions": ["error", "always"]
+    "semi": ["error", "always"]
   }
 }
