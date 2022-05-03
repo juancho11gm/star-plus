@@ -10,6 +10,7 @@ This project is based on the [Star+ website](https://www.starplus.com/es-co) jus
 ## Tech Stack
 
 - Platform: Node.js v16+.
+- Vite 🌼.
 - Code lint and style: eslint, stylelint, standardjs.
 - [Commitlint](https://commitlint.js.org/#/) & [Commitizen](https://github.com/commitizen/cz-cli).
 - HTML.
@@ -34,6 +35,7 @@ nvm use
 
 ```bash
 npm i
+npm run dev
 ```
 
 - Open the [index.html](./index.html) file with your favorite browser.
