@@ -2,54 +2,53 @@
 @import '../../styles/main.scss';
 
 .plans {
-  background-color: var(--background);
+  background-color: $background;
   padding: 10vw 5vw;
 
   @include desktop {
     padding-top: 0;
   }
-}
 
-.plans__title {
-  font-size: 26px;
-  letter-spacing: normal;
-  line-height: 36px;
-  margin-bottom: 24px;
-  margin-top: 0;
-  text-align: center;
+  &__title {
+    font-size: 26px;
+    letter-spacing: normal;
+    line-height: 36px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    text-align: center;
 
-  @include desktop {
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 30px;
-  }
-}
-
-.plan__title {
-  color: var(--secondary-color);
-  font-size: 15px;
-  line-height: 25px;
-
-  @include desktop {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-.plans__options {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 -12px;
-  padding-left: 0;
-
-  @include tablet {
-    display: grid;
+    @include desktop {
+      font-size: 44px;
+      line-height: 54px;
+      margin-bottom: 30px;
+    }
   }
 
-  @include desktop {
+  &__options {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -12px;
+    padding-left: 0;
+
+    @include tablet {
+      display: grid;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__footnote {
+    color: $secondary-color;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    margin: 0 0 24px;
+    text-align: center;
   }
 }
 
@@ -70,10 +69,65 @@
   padding: 60px 40px 0;
   padding-bottom: 40px;
   text-align: center;
+
+  &__title {
+    color: $secondary-color;
+    font-size: 15px;
+    line-height: 25px;
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &__description {
+    color: $secondary-color;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 24px;
+    text-align: center;
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 0 28px;
+    }
+  }
+
+  &__price {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 24px;
+
+    @include desktop {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-radius: 4px;
+    color: $text-primary-color;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin-bottom: 0;
+    max-width: 320px;
+    padding: 11.5px 24px;
+    text-transform: uppercase;
+  }
 }
 
 .plan--combo {
-  background-image: url('../img/promo.png');
+  background-image: url('../img/plans/promo.png');
   margin-bottom: 40px;
 }
 
@@ -87,71 +141,17 @@
 }
 
 .plan--monthly {
-  background-image: url('../img/month-year.png');
+  background-image: url('../img/plans/month-year.png');
 }
 
 .plan--annually {
-  background-image: url('../img/month-year.png');
-}
-
-.plan__description {
-  color: var(--secondary-color);
-  font-size: 15px;
-  line-height: 25px;
-  margin: 0 0 24px;
-  text-align: center;
-
-  @include desktop {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 0 28px;
-  }
-}
-
-.plan__price {
-  font-size: 22px;
-  line-height: 32px;
-  margin-top: 24px;
-
-  @include desktop {
-    font-size: 28px;
-    line-height: 38px;
-  }
-}
-
-.plan__button {
-  width: 100%;
-  height: 50px;
-  align-items: center;
-  border-radius: 4px;
-  color: var(--text-primary-color);
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 15px;
-  font-weight: 400;
-  justify-content: center;
-  letter-spacing: 1px;
-  line-height: 15px;
-  margin-bottom: 0;
-  max-width: 320px;
-  padding: 11.5px 24px;
-  text-transform: uppercase;
+  background-image: url('../img/plans/month-year.png');
 }
 
 .button--combo {
-  background: var(--blue);
+  background: $blue;
 }
 
 .button--star {
-  background: var(--gradient);
-}
-
-.plans__footnote {
-  color: var(--secondary-color);
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  line-height: 21px;
-  margin: 0 0 24px;
-  text-align: center;
+  background: $gradient;
 }

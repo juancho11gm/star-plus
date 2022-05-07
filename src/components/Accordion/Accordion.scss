@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/main.scss';
 
 .accordion {
   padding: 10vw 5vw;
@@ -16,13 +17,13 @@
 }
 
 .accordion-container {
-  background-color: var(--accordion-background-color);
+  background-color: $accordion-background-color;
   margin-top: 16px;
   text-align: left;
 
   &__content {
     height: 0;
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 16px;
     line-height: 26px;
     overflow: hidden;
