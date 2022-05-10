@@ -3,7 +3,7 @@
 
 .hero {
   background-color: $background;
-  background-image: url('../img/hero/hero-sm.jpg');
+  background-image: url('/hero/hero-sm.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -11,11 +11,11 @@
   text-align: center;
 
   @include tablet {
-    background-image: url('../../../img/hero/hero-md.jpg');
+    background-image: url('/hero/hero-md.jpg');
   }
 
   @include desktop {
-    background-image: url('../../../img/hero/hero-lg.jpg');
+    background-image: url('/hero/hero-lg.jpg');
   }
 
   &__content {
