@@ -124,28 +124,28 @@
     padding: 11.5px 24px;
     text-transform: uppercase;
   }
-}
 
-.plan--combo {
-  background-image: url('../img/plans/promo.png');
-  margin-bottom: 40px;
-}
-
-.plan--monthly,
-.plan--annually {
-  margin: 40px 0;
-
-  @include desktop {
-    margin-top: 0;
+  &--combo {
+    background-image: url('../img/plans/promo.png');
+    margin-bottom: 40px;
   }
-}
 
-.plan--monthly {
-  background-image: url('../img/plans/month-year.png');
-}
+  &--monthly,
+  &--annually {
+    margin: 40px 0;
 
-.plan--annually {
-  background-image: url('../img/plans/month-year.png');
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+
+  &--monthly {
+    background-image: url('../img/plans/month-year.png');
+  }
+
+  &--annually {
+    background-image: url('../img/plans/month-year.png');
+  }
 }
 
 .button--combo {
