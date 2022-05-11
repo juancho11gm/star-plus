@@ -1,10 +1,13 @@
+@import '../../styles/mixins';
+@import '../../styles/main.scss';
+
 .footer {
-  color: var(--secondary-color);
+  color: $secondary-color;
   padding: 26px 8px;
   text-align: center;
 
   &__link {
-    color: var(--secondary-color);
+    color: $secondary-color;
   }
 
   &__logo {
