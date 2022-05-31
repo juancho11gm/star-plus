@@ -5,7 +5,7 @@
 [![stylelint](https://img.shields.io/badge/css_style-stylelint-263338.svg?style=flat-square)](https://stylelint.io)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This project is based on the [Star+ website](https://www.starplus.com/es-co) just to practice and learn new concepts about web development layouts and styling.
+This project is based on the [Star+ website](https://www.starplus.com/es-co) just to practice and learn new concepts about web development layouts and styling. It is a Single Page Application created with VanillaJS and [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements).
 
 ## Tech Stack
 
@@ -26,6 +26,11 @@ in realtime the recommendations while writing code.
   - [vscode eslint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [vscode prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [vscode stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+
+## Deployment
+
+The deployment is being managed through [Netlify](https://www.netlify.com/).
+Once your changes are merged in `main` visit star-plus.netlify.app/ .
 
 ## Getting Started
 

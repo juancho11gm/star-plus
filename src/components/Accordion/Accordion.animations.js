@@ -11,4 +11,4 @@ function animateAccordion({ target: accordionSummary }) {
   accordionContent.style.height = contentHeight ? 0 : `${descriptionHeight}px`;
 }
 
-export default animateAccordion;
+export { animateAccordion };
