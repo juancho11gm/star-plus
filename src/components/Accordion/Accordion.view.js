@@ -1,8 +1,9 @@
-import animateAccordion from './Accordion.animations';
+import { $$ } from '../../utils/dom';
+import { animateAccordion } from './Accordion.animations';
 
 class AccordionView {
-  constructor(accordions) {
-    this.accordions = accordions;
+  constructor(accordion) {
+    this.accordions = $$('.accordion-container', accordion);
   }
 
   static createAccordionAnimation({ accordion, callback }) {
@@ -20,4 +21,4 @@ class AccordionView {
   }
 }
 
-export default AccordionView;
+export { AccordionView };
