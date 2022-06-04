@@ -124,7 +124,7 @@
   border: none;
   bottom: 2vw;
   cursor: pointer;
-  fill: #f9f9f9;
+  fill: $secondary-color;
   font-size: 0;
   left: 50%;
   margin: 0 auto;
@@ -154,5 +154,9 @@
 
   @include desktop {
     top: 85%;
+  }
+
+  &:hover {
+    fill: $text-primary-color;
   }
 }
