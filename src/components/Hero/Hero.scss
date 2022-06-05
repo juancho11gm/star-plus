@@ -124,18 +124,39 @@
   border: none;
   bottom: 2vw;
   cursor: pointer;
-  fill: #f9f9f9;
+  fill: $secondary-color;
   font-size: 0;
   left: 50%;
   margin: 0 auto;
   opacity: 0.65;
   padding: 6px;
-  pointer-events: none;
   position: absolute;
   top: 92%;
   transform: translate(-50%, -50%);
 
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translate(-50%, 0);
+    }
+
+    40% {
+      transform: translate(-50%, -7px);
+    }
+
+    60% {
+      transform: translate(-50%, -3.5px);
+    }
+  }
+
   @include desktop {
     top: 85%;
+  }
+
+  &:hover {
+    fill: $text-primary-color;
   }
 }
