@@ -27,7 +27,7 @@ in realtime the recommendations while writing code.
   - [vscode prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [vscode stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-## Deployment
+## Deployment
 
 The deployment is being managed through [Netlify](https://www.netlify.com/).
 Once your changes are merged in `main` visit star-plus.netlify.app/ .
