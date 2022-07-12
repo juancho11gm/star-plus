@@ -1,4 +1,6 @@
+import { $ } from '../../utils/dom';
 import './Plans.scss';
+import { PlansView } from './Plans.view';
 
 class Plans extends HTMLElement {
   constructor() {
@@ -42,6 +44,12 @@ class Plans extends HTMLElement {
           de terceros no asociados a Disney.
         </p>
       </section>`;
+  }
+
+  connectedCallback() {
+    const navbarContent = $('.navbar-content');
+    const plansView = new PlansView(this, navbarContent);
+    plansView.addScrollAnimation();
   }
 }
 
