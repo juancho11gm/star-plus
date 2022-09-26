@@ -10,5 +10,8 @@
     "source.fixAll.stylelint": true,
     "source.fixAll.eslint": true
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "liveServer.settings.port": 5501
 }
