@@ -15,7 +15,7 @@ interface accordionAnimationProps {
 function accordionAnimation({ node, isOpen }: accordionAnimationProps) {
   gsap.to(node, {
     duration: 0.25,
-    height: isOpen ? 'auto' : '0',
+    height: isOpen ? '0' : 'auto',
   });
 }
 
