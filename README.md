@@ -10,12 +10,11 @@ This project is based on the [Star+ website](https://www.starplus.com/es-co) jus
 ## Tech Stack
 
 - Platform: Node.js v16+.
-- Vite 🌼.
+- NextJS 🌼.
+- GSAP 🦸🏻.
+- SCSS 💅🏻.
 - Code lint and style: eslint, stylelint, standardjs.
 - [Commitlint](https://commitlint.js.org/#/) & [Commitizen](https://github.com/commitizen/cz-cli).
-- HTML.
-- SCSS.
-- ES 2015+.
 
 ## Local Development
 
@@ -43,7 +42,7 @@ npm i
 npm run dev
 ```
 
-- Open the [index.html](./index.html) file with your favorite browser.
+- Open the [http://localhost:3000/](http://localhost:3000/) in your favorite browser.
 
 ## How to contribute
 
@@ -84,3 +83,5 @@ docs: #2 add readme structure
 - @juancho11gm
 
 Made with <3.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
