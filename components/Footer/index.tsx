@@ -1,16 +1,16 @@
-import Image from 'next/image';
-//import './Footer.scss';
+import { theme } from '@styles/theme';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Image
-        className="footer__logo"
-        src="/star-logo.svg"
-        alt="Star+ logo"
-        loading="lazy"
-        layout="fill"
-      />
+      <picture>
+        <img
+          className="footer__logo"
+          src="/star-logo.svg"
+          alt="Star+ logo"
+          loading="lazy"
+        />
+      </picture>
       <p className="footer_description">
         2022. Cloned by
         <a
@@ -31,6 +31,26 @@ const Footer = () => {
           @juancho11gm
         </a>
       </p>
+      <style jsx>
+        {`
+          .footer {
+            color: ${theme.colors.textSecondary};
+            padding: 26px 8px;
+            text-align: center;
+
+            &__link {
+              color: ${theme.colors.textSecondary};
+            }
+
+            &__logo {
+              width: 80px;
+              height: 25px;
+              display: block;
+              margin: 4px auto 15px;
+            }
+          }
+        `}
+      </style>
     </footer>
   );
 };

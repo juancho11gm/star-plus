@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { theme, breakpoints } from '../../styles/theme';
+import { theme, breakpoints } from '@styles/theme';
 
 interface LayoutProps {
   children: ReactNode;
@@ -22,8 +22,8 @@ const Layout = (props: LayoutProps) => {
           }
 
           body {
-            background-color: ${theme.colors.background};
-            color: ${theme.colors.background};
+            background-color: ${theme.colors.backgroundPrimary};
+            color: ${theme.colors.textPrimary};
           }
         `}
       </style>

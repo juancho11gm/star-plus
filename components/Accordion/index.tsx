@@ -1,82 +1,96 @@
-const Accordion = () => {
+import React, { useRef, useState } from 'react';
+import { gsap } from 'gsap';
+import { theme } from '@styles/theme';
+
+interface AccordionProps {
+  summary: string;
+  description: string;
+}
+
+interface accordionAnimationProps {
+  node: HTMLElement | null;
+  isOpen: boolean;
+}
+
+function accordionAnimation({ node, isOpen }: accordionAnimationProps) {
+  gsap.to(node, {
+    duration: 0.25,
+    height: isOpen ? 'auto' : '0',
+  });
+}
+
+const Accordion = ({ summary, description }: AccordionProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const accordionContentRef = React.useRef<HTMLDivElement>(null);
+  const accordionIcon = isOpen ? `-` : `+`;
+
   return (
-    <section className="accordion">
-      <h2 className="accordion__title">Preguntas frecuentes</h2>
-      <div className="accordion-container">
-        <summary className="accordion-container__summary">
-          ¿Ya tienes Disney+ o Star+ y quieres Combo+?
-        </summary>
-        <div className="accordion-container__content">
-          <p className="accordion-container__description">
-            Con Combo+:
-            <br />• Descontaremos el valor de tu suscripción actual del precio
-            de Combo+. (¡Sí, para el plan anual también!).
-            <br />• Si tienes una suscripción mensual, el valor que pagas
-            mensualmente se descontará del precio final de Combo+.
-            <br />• Si tienes una suscripción anual, dividiremos el precio que
-            pagaste en 12 partes iguales y descontaremos ese precio mensualmente
-            del precio final de Combo+.
-            <br />• Te llegará un correo electrónico con el detalle de los
-            cargos apenas confirmes el pago.
-            <br />• Recuerda que puedes cancelar en cualquier momento.
-            <br />
-            La suscripción a Combo+ es únicamente mensual, por el momento.
-          </p>
-        </div>
+    <div className="accordion-container">
+      <summary
+        className="accordion-container__summary"
+        onClick={() => {
+          accordionAnimation({ node: accordionContentRef.current, isOpen });
+          setIsOpen(!isOpen);
+        }}
+      >
+        {summary}
+      </summary>
+
+      <div className={`accordion-container__content`} ref={accordionContentRef}>
+        <p
+          className="accordion-container__description"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </div>
-      <div className="accordion-container">
-        <summary className="accordion-container__summary">
-          ¿Ya tienes una suscripción a Disney+?
-        </summary>
-        <div className="accordion-container__content">
-          <p className="accordion-container__description">
-            Puedes usar tu nombre de usuario y contraseña de Disney+ para
-            suscribirte a Star+ y así conseguir la oferta combinada Combo+.
-            Debes tener 18 años de edad para suscribirte.
-          </p>
-        </div>
-      </div>
-      <div className="accordion-container">
-        <summary className="accordion-container__summary">
-          ¿Qué incluye Star+?
-        </summary>
-        <div className="accordion-container__content">
-          <p className="accordion-container__description">
-            Beneficios de la suscripción a Star+:
-            <br />• Experiencia de entretenimiento exclusiva.
-            <br />• Eventos deportivos de ESPN en vivo y con máxima calidad.
-            <br />• Amplia variedad de títulos en 4K.
-            <br />• Descargas hasta en diez dispositivos.
-            <br />• Hasta cuatro pantallas a la vez sin costo adicional:
-            ¡disfrutan todos!
-            <br />• Controles parentales para cuidar a la familia.
-          </p>
-        </div>
-      </div>
-      <div className="accordion-container">
-        <summary className="accordion-container__summary">
-          ¿Qué métodos de pago puedo usar?
-        </summary>
-        <div className="accordion-container__content">
-          <p className="accordion-container__description">
-            Puedes pagar con tarjeta de crédito, débito, Mercado Pago e incluso
-            a través de terceros como Google Play Store o App Store de Apple. No
-            es obligatorio tener tarjeta bancaria.
-          </p>
-        </div>
-      </div>
-      <div className="accordion-container">
-        <summary className="accordion-container__summary">
-          ¿Hay controles parentales en Star+?
-        </summary>
-        <div className="accordion-container__content">
-          <p className="accordion-container__description">
-            Sí, con esta función podrás controlar el acceso a los contenidos a
-            través de la clasificación por edad y cuidar a tu familia.
-          </p>
-        </div>
-      </div>
-    </section>
+
+      <i className="accordion-container__icon">{accordionIcon}</i>
+
+      <style jsx>
+        {`
+          .accordion-container {
+            background-color: ${theme.colors.backgroundTertiary};
+            margin-top: 16px;
+            text-align: left;
+            position: relative;
+
+            &__content {
+              color: ${theme.colors.textSecondary};
+              height: 0;
+              font-size: 16px;
+              line-height: 26px;
+              overflow: hidden;
+              padding: 0 24px;
+              transform-origin: top;
+            }
+
+            &__description {
+              padding-bottom: 24px;
+            }
+
+            &__summary {
+              align-items: center;
+              cursor: pointer;
+              display: flex;
+              font-size: 15px;
+              font-size: 18px;
+              justify-content: space-between;
+              line-height: 28px;
+              list-style: none;
+              padding: 24px;
+            }
+
+            &__icon {
+              font-size: 50px;
+              font-style: normal;
+              line-height: 0.8;
+              position: absolute;
+              right: 20px;
+              top: 16px;
+            }
+          }
+        `}
+      </style>
+    </div>
   );
 };
 

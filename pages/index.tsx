@@ -1,11 +1,13 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Accordion from '../components/Accordion';
-import Devices from '../components/Devices';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Plans from '../components/Plans';
+import { UIContextProvider } from '@context/UIContext';
+import Accordion from '@components/AccordionList';
+import Devices from '@components/Devices';
+import Footer from '@components/Footer';
+import Header from '@components/Header';
+import Hero from '@components/Hero';
+import Plans from '@components/Plans';
+import AccordionList from '@components/AccordionList';
 
 const HomePage: NextPage = () => {
   return (
@@ -15,15 +17,14 @@ const HomePage: NextPage = () => {
         <meta name="description" content="Star + website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <>
+      <UIContextProvider>
         <Header />
-        {/*<Hero />
+        <Hero />
         <Plans />
         <Devices />
-        <Accordion />
-        <Footer /> */}
-      </>
+        <AccordionList />
+        <Footer />
+      </UIContextProvider>
     </>
   );
 };

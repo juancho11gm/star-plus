@@ -1,8 +1,12 @@
-import Image from 'next/image';
+import { useContext } from 'react';
 import Link from 'next/link';
-import { breakpoints, theme } from '../../styles/theme';
+import UIContext from '@context/UIContext';
+import { breakpoints, theme } from '@styles/theme';
 
 const Header = () => {
+  const UIContextData = useContext(UIContext);
+  const { isHeaderVisible } = UIContextData || {};
+
   return (
     <header>
       <nav className="navbar navbar-hero">
@@ -10,16 +14,16 @@ const Header = () => {
           <a className="navbar-hero__sign-in"> Iniciar Sesión</a>
         </Link>
       </nav>
-      <nav className="navbar navbar-content">
+      <nav className="navbar navbar-content ">
         <Link href="/" passHref>
           <a className="navbar-content__logo">
-            <Image
-              className="navbar-content__img"
-              src="/star-logo.svg"
-              alt="Star+ logo"
-              width={76}
-              height={23}
-            />
+            <picture>
+              <img
+                className="navbar-content__img"
+                src="/star-logo.svg"
+                alt="Star+ logo"
+              />
+            </picture>
           </a>
         </Link>
         <Link href="/">
@@ -52,7 +56,7 @@ const Header = () => {
               background-color: ${theme.colors.headerLogin};
               border: 1px solid ${theme.colors.headerLogin};
               border-radius: 4px;
-              color: ${theme.colors.text};
+              color: ${theme.colors.textPrimary};
               cursor: pointer;
               display: grid;
               font-size: 13px;
@@ -92,8 +96,8 @@ const Header = () => {
             }
 
             &-content {
-              background-color: ${theme.colors.background};
-              opacity: 0;
+              background-color: ${theme.colors.backgroundPrimary};
+              opacity: ${isHeaderVisible ? '1' : '0'};
 
               @media (min-width: ${breakpoints.tabletWidth}) {
                 height: 70px;
@@ -128,11 +132,11 @@ const Header = () => {
                 width: auto;
                 height: 40px;
                 align-items: center;
-                background: ${theme.colors.gradient};
+                background: ${theme.colors.redOrangeGradient};
                 border: none;
                 border-radius: 4px;
                 box-sizing: border-box;
-                color: ${theme.colors.text};
+                color: ${theme.colors.textPrimary};
                 cursor: pointer;
                 display: inline-flex;
                 font-size: 13px;

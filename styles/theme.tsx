@@ -3,10 +3,15 @@ export const theme = {
     sen: 'Sen, sans-serif',
   },
   colors: {
-    background: '#090b13',
-    text: '#f9f9f9',
+    backgroundPrimary: '#090b13',
+    backgroundSecondary: '#050b12',
+    backgroundTertiary: '#35313f',
+    textPrimary: '#f9f9f9',
+    textSecondary: '#cacaca',
     headerLogin: '#4e4a59',
-    gradient: 'linear-gradient(90deg, #fa1660, #ff6e00)',
+    buttonPrimary: '#7b00d6',
+    buttonSecondary: '#6421ff',
+    redOrangeGradient: 'linear-gradient(90deg, #fa1660, #ff6e00)',
   },
 };
 
