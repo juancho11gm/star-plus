@@ -1,18 +1,39 @@
-import { useContext } from 'react';
 import Link from 'next/link';
+import { useContext } from 'react';
 import UIContext from '@context/UIContext';
 import { breakpoints, theme } from '@styles/theme';
+import { loginWithGmail, logout } from '../../firebase/client';
+import { useUser } from '@hooks/useUser';
 
 const Header = () => {
   const UIContextData = useContext(UIContext);
   const { isHeaderVisible } = UIContextData || {};
+  const { user } = useUser();
+
+  const handleLogin = () => {
+    loginWithGmail().catch((err) => console.log(err));
+  };
+
+  const handleLogout = () => {
+    logout().catch((err) => console.log(err));
+  };
+
+  const isLoggedIn = Object.keys(user).length !== 0;
 
   return (
     <header>
       <nav className="navbar navbar-hero">
-        <Link href="/">
-          <a className="navbar-hero__sign-in"> Iniciar Sesión</a>
-        </Link>
+        {!isLoggedIn ? (
+          <a className="navbar-hero__sign-in" onClick={handleLogin}>
+            Iniciar Sesión
+          </a>
+        ) : (
+          <span>
+            <a className="navbar-hero__sign-in" onClick={handleLogout}>
+              Cerrar Sesión
+            </a>
+          </span>
+        )}
       </nav>
       <nav className="navbar navbar-content ">
         <Link href="/" passHref>
@@ -29,9 +50,15 @@ const Header = () => {
         <Link href="/">
           <a className="navbar-content__suscribe">Suscríbete Ahora</a>
         </Link>
-        <Link href="/">
-          <a className="navbar-content__sign-in"> Iniciar Sesión</a>
-        </Link>
+        {!isLoggedIn ? (
+          <a className="navbar-hero__sign-in" onClick={handleLogin}>
+            Iniciar Sesión
+          </a>
+        ) : (
+          <a className="navbar-hero__sign-in" onClick={handleLogout}>
+            Cerrar Sesión
+          </a>
+        )}
       </nav>
       <style jsx>
         {`

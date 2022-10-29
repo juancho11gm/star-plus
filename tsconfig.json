@@ -20,7 +20,9 @@
       "@pages/*": ["pages/*"],
       "@hooks/*": ["hooks/*"],
       "@context/*": ["context/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@services/*": ["services/*"],
+      "@firebase/*": ["firebase/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

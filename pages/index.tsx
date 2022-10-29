@@ -1,7 +1,5 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import { UIContextProvider } from '@context/UIContext';
-import Accordion from '@components/AccordionList';
 import Devices from '@components/Devices';
 import Footer from '@components/Footer';
 import Header from '@components/Header';
@@ -17,14 +15,13 @@ const HomePage: NextPage = () => {
         <meta name="description" content="Star + website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <UIContextProvider>
-        <Header />
-        <Hero />
-        <Plans />
-        <Devices />
-        <AccordionList />
-        <Footer />
-      </UIContextProvider>
+
+      <Header />
+      <Hero />
+      <Plans />
+      <Devices />
+      <AccordionList />
+      <Footer />
     </>
   );
 };

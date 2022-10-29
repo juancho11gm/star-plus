@@ -25,16 +25,14 @@ const Accordion = ({ summary, description }: AccordionProps) => {
   const accordionIcon = isOpen ? `-` : `+`;
 
   return (
-    <div className="accordion-container">
-      <summary
-        className="accordion-container__summary"
-        onClick={() => {
-          accordionAnimation({ node: accordionContentRef.current, isOpen });
-          setIsOpen(!isOpen);
-        }}
-      >
-        {summary}
-      </summary>
+    <div
+      className="accordion-container"
+      onClick={() => {
+        accordionAnimation({ node: accordionContentRef.current, isOpen });
+        setIsOpen(!isOpen);
+      }}
+    >
+      <summary className="accordion-container__summary">{summary}</summary>
 
       <div className={`accordion-container__content`} ref={accordionContentRef}>
         <p
@@ -80,6 +78,7 @@ const Accordion = ({ summary, description }: AccordionProps) => {
             }
 
             &__icon {
+              cursor: pointer;
               font-size: 50px;
               font-style: normal;
               line-height: 0.8;
