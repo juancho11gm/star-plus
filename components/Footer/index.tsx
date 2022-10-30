@@ -1,57 +1,30 @@
-import { theme } from '@styles/theme';
+import { StarImage } from '@components/Icons/StarImage';
+import { StarLink } from '@components/StarLink';
+import { FooterContainer, FooterDescription } from './styles';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <picture>
-        <img
-          className="footer__logo"
-          src="/star-logo.svg"
-          alt="Star+ logo"
-          loading="lazy"
-        />
-      </picture>
-      <p className="footer_description">
+    <FooterContainer>
+      <StarImage />
+      <FooterDescription>
         2022. Cloned by
-        <a
-          className="footer__link"
+        <StarLink
           href="https://github.com/Jaimeandres97"
           target="_blank"
-          rel="noreferrer"
+          style={{ padding: '0 4px' }}
         >
           @Jaimeandres97
-        </a>
+        </StarLink>
         and
-        <a
-          className="footer__link"
+        <StarLink
           href="https://github.com/juancho11gm"
           target="_blank"
-          rel="noreferrer"
+          style={{ padding: '0 4px' }}
         >
           @juancho11gm
-        </a>
-      </p>
-      <style jsx>
-        {`
-          .footer {
-            color: ${theme.colors.textSecondary};
-            padding: 26px 8px;
-            text-align: center;
-
-            &__link {
-              color: ${theme.colors.textSecondary};
-            }
-
-            &__logo {
-              width: 80px;
-              height: 25px;
-              display: block;
-              margin: 4px auto 15px;
-            }
-          }
-        `}
-      </style>
-    </footer>
+        </StarLink>
+      </FooterDescription>
+    </FooterContainer>
   );
 };
 

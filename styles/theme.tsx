@@ -20,3 +20,8 @@ export const breakpoints = {
   tabletWidth: '768px',
   desktopWidth: '1024px',
 };
+
+export const device = {
+  tablet: `(min-width: ${breakpoints.tabletWidth})`,
+  desktop: `(min-width: ${breakpoints.desktopWidth})`,
+};

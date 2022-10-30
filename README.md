@@ -12,8 +12,9 @@ This project is based on the [Star+ website](https://www.starplus.com/es-co) jus
 - Platform: Node.js v16+.
 - NextJS 🌼.
 - GSAP 🦸🏻.
-- SCSS 💅🏻.
+- Styled Components 💅🏻.
 - Firebase 🛡.
+- Storybook 📚.
 - Code lint and style: eslint, stylelint, standardjs.
 - [Commitlint](https://commitlint.js.org/#/) & [Commitizen](https://github.com/commitizen/cz-cli).
 

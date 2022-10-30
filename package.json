@@ -14,7 +14,9 @@
     "lint:css:fix": "stylelint \"./**/*.css\" --fix",
     "format": "prettier --write .",
     "test:ci": "npm run lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -27,16 +29,29 @@
   },
   "homepage": "https://github.com/juancho11gm/start-plus#readme",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "18.7.18",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.13.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-storybook": "^0.6.6",
     "husky": "^7.0.0",
     "lint-staged": "^12.3.8",
     "node-sass": "^7.0.3",
@@ -57,8 +72,9 @@
   "dependencies": {
     "firebase": "^9.13.0",
     "gsap": "^3.11.2",
-    "next": "12.3.1",
+    "next": "^13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6"
   }
 }
