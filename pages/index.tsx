@@ -1,10 +1,9 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Devices from '@components/Devices';
-import Footer from '@components/Footer';
+import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 import { Hero } from '@components/Hero';
-import Plans from '@components/Plans';
+import { Plans } from '@components/Plans';
 import AccordionList from '@components/AccordionList';
 
 const HomePage: NextPage = () => {
@@ -16,14 +15,17 @@ const HomePage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Hero />
+      <>
+        <Header />
+        <Hero />
+        <Plans />
+        <Footer />
+      </>
+
       {/*
-      <Plans />
       <Devices />
       <AccordionList />
       */}
-      <Footer />
     </>
   );
 };

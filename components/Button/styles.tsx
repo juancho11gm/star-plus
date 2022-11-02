@@ -42,7 +42,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
   line-height: 15px;
   margin: 5px;
   max-width: none;
-  padding: 9px 12px;
+  padding: 4px 4px;
   text-decoration: none;
   transition: opacity 1s;
   ${(props) => props.size && SIZES[props.size]}
@@ -50,5 +50,9 @@ export const ButtonContainer = styled.button<ButtonProps>`
 
   :disabled {
     cursor: auto;
+  }
+
+  @media ${device.tablet} {
+    padding: 9px 12px;
   }
 `;
