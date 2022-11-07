@@ -15,6 +15,7 @@ This project is based on the [Star+ website](https://www.starplus.com/es-co) jus
 - Styled Components 💅🏻.
 - Firebase 🛡.
 - Storybook 📚.
+- Jest & React Testing Library 🧪.
 - Code lint and style: eslint, stylelint, standardjs.
 - [Commitlint](https://commitlint.js.org/#/) & [Commitizen](https://github.com/commitizen/cz-cli).
 

@@ -1,7 +1,6 @@
-import { useContext } from 'react';
 import { loginWithGmail, logout } from '@firebase/client';
-import UIContext from '@context/UIContext';
 import GmailIcon from '@components/Icons/Gmail';
+import { useHeaderVisible } from '@hooks/useHeaderVisible';
 import { useMediaQuery } from '@hooks/useMediaQuery';
 import { useUser } from '@hooks/useUser';
 import { Button, ButtonProps } from '@components/Button';
@@ -11,8 +10,7 @@ import { device } from '@styles/theme';
 import { NavbarContent } from './styles';
 
 const Header = () => {
-  const UIContextData = useContext(UIContext);
-  const { isHeaderVisible } = UIContextData || {};
+  const { isHeaderVisible } = useHeaderVisible();
   const { user, isLoading } = useUser();
   const isTablet = useMediaQuery(device.tablet);
 

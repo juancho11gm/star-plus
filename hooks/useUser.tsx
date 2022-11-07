@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import UserContext from '@context/UserContext';
 import { onAuthStateChange } from '@firebase/client';
 
-export const useUser = () => {
+const useUser = () => {
   const { user, setUser, isLoading, setIsLoading } = useContext(UserContext);
 
   useEffect(() => {
@@ -12,3 +12,5 @@ export const useUser = () => {
 
   return { user, isLoading };
 };
+
+export { useUser };
